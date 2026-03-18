@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8864A" />
+      <stop offset="50%" stop-color="#E8B87A" />
+      <stop offset="100%" stop-color="#A0622E" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="512" height="512" rx="112" fill="#0D1B2A" />
+  
+  <g transform="translate(110, 116)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 60 280 V 40 C 60 40 220 40 220 120 C 220 200 60 200 60 200" stroke="url(#goldGradient)" stroke-width="50" />
+    
+    <path d="M 120 200 L 220 300" stroke="url(#goldGradient)" stroke-width="50" />
+    
+    <path d="M 280 80 C 330 130 330 230 240 290" stroke="#1A7EA6" stroke-width="40" />
+  </g>
+</svg>
