@@ -2,12 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Safari tints the status bar + toolbar from THIS page (the app lives in the iframe): match the app navy. -->
+    <meta name="theme-color" content="#0D1B2A">
     <title>REITS</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; background-color: #f4f7f6; font-family: sans-serif; }
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; background-color: #0D1B2A; font-family: sans-serif; }
 
         .loader-container {
             position: absolute;
@@ -21,8 +24,8 @@
         .spinner {
             width: 50px;
             height: 50px;
-            border: 5px solid #ddd;
-            border-top: 5px solid #1a73e8;
+            border: 5px solid rgba(255,255,255,0.12);
+            border-top: 5px solid #C8864A;
             border-radius: 50%;
             animation: spin 1s linear infinite;
             margin: 0 auto 15px;
@@ -44,13 +47,12 @@
 
     <div class="loader-container">
         <div class="spinner"></div>
-        <p style="color: #666; font-weight: bold;">Cargando REITS 2026...</p>
-        <p style="color: #999; font-size: 12px;">Por favor, espera un momento.</p>
+        <p style="color: #E8B87A; font-weight: bold;">Cargando REITS 2026...</p>
+        <p style="color: rgba(255,255,255,0.55); font-size: 12px;">Por favor, espera un momento.</p>
     </div>
 
     <iframe
-        allow="geolocation; microphone; camera"
-        onload="this.style.backgroundColor='#ffffff';">
+        allow="geolocation; microphone; camera">
     </iframe>
 
     <script>
